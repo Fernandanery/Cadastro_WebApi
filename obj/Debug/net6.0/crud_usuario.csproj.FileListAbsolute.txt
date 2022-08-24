@@ -25,3 +25,11 @@ C:\Users\Fernanda_dev\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\Área d
 C:\Users\Fernanda_dev\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\Área de Trabalho\crud_usuario\obj\Debug\net6.0\crud_usuario.pdb
 C:\Users\Fernanda_dev\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\Área de Trabalho\crud_usuario\obj\Debug\net6.0\crud_usuario.genruntimeconfig.cache
 C:\Users\Fernanda_dev\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\Área de Trabalho\crud_usuario\obj\Debug\net6.0\ref\crud_usuario.dll
+C:\Users\Fernanda_dev\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\Área de Trabalho\crud_usuario\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Fernanda_dev\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\Área de Trabalho\crud_usuario\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Fernanda_dev\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\Área de Trabalho\crud_usuario\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Fernanda_dev\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\Área de Trabalho\crud_usuario\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Fernanda_dev\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\Área de Trabalho\crud_usuario\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Fernanda_dev\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\Área de Trabalho\crud_usuario\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Fernanda_dev\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\Área de Trabalho\crud_usuario\bin\Debug\net6.0\Npgsql.dll
+C:\Users\Fernanda_dev\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\Área de Trabalho\crud_usuario\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

@@ -1,4 +1,5 @@
 using crud_usuario.Data;
+using crud_usuario.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,9 +12,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<usuarioContext>(options => {
-    options.UseNpgsql();
+    DbContextOptionsBuilder dbContextOptionsBuilder = options.UseNpgsql(builder.Configuration.GetConnectionString("Default"));
     
 });
+
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 
 var app = builder.Build();
 

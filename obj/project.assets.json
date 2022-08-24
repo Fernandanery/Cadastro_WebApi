@@ -1129,11 +1129,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Fernanda_dev\\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\\Área de Trabalho\\crud_usuario\\crud_usuario.csproj",
+      "projectUniqueName": "C:\\Users\\Fernanda_dev\\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\\Área de Trabalho\\crud_usuario\\crud_usuario.csproj",
       "projectName": "crud_usuario",
-      "projectPath": "c:\\Users\\Fernanda_dev\\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\\Área de Trabalho\\crud_usuario\\crud_usuario.csproj",
+      "projectPath": "C:\\Users\\Fernanda_dev\\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\\Área de Trabalho\\crud_usuario\\crud_usuario.csproj",
       "packagesPath": "C:\\Users\\Fernanda_dev\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Fernanda_dev\\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\\Área de Trabalho\\crud_usuario\\obj\\",
+      "outputPath": "C:\\Users\\Fernanda_dev\\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\\Área de Trabalho\\crud_usuario\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Fernanda_dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1143,6 +1143,7 @@
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
