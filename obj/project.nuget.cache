@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K5Ulo4vVlK8uwZMKDodp9LIWm0kGlGIoe5vl6cINLUqzqTKrMxwxquH+FwzPvhkMcY5ru8hJR9Vk4EhWKTlbpw==",
+  "dgSpecHash": "GscBR0hxblJOZRRyexUVtlc6mfpgqA39JpxW66aVjHl/7YX2b4LZkOQTxEJi5CVeAPzRt84eUl7rAwcqDiXXFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fernanda_dev\\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\\Área de Trabalho\\crud_usuario\\crud_usuario.csproj",
+  "projectFilePath": "C:\\Users\\Fernanda_dev\\OneDrive - ROADPASS PAYMENTS & URBAN MOBILITY LTDA\\Área de Trabalho\\Cadastro_WebApi\\crud_usuario.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fernanda_dev\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Fernanda_dev\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.8\\microsoft.entityframeworkcore.6.0.8.nupkg.sha512",

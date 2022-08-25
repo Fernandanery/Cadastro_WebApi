@@ -12,9 +12,9 @@ namespace crud_usuario.Repository
             this.context = context;
         }
 
-        public Task<usuario> BuscaUsuarios(int id)
+        public async Task<usuario> BuscaUsuarios(int id)
         {
-            throw new NotImplementedException();
+            return await this.context.usuarios.toListAsync();
         }
 
         public Task<IEnumerable<usuario>> BuscaUsuarios()
@@ -37,7 +37,7 @@ namespace crud_usuario.Repository
 
         public async Task<bool> SaveChangesAsync()
         {
-            return this.Context.SaveChangesAsync() > 0;
+            return await this.context.SaveChangesAsync() > 0;
         }
     }
 }
