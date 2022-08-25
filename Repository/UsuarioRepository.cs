@@ -11,6 +11,16 @@ namespace crud_usuario.Repository
         {
             this.context = context;
         }
+
+        public Task<usuario> BuscaUsuarios(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<usuario>> BuscaUsuarios()
+        {
+            throw new NotImplementedException();
+        }
         public void AdicionaUsuario(usuario usuario)
         {
             this.context.Add(usuario);
@@ -20,17 +30,6 @@ namespace crud_usuario.Repository
         {
             throw new NotImplementedException();
         }
-
-        public Task<IEnumerable<usuario>> BuscaUsuarios()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<usuario> BuscaUsuarios(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public void DeletaUsuario(usuario usuario)
         {
             throw new NotImplementedException();
@@ -38,7 +37,7 @@ namespace crud_usuario.Repository
 
         public async Task<bool> SaveChangesAsync()
         {
-            //return this.Context.SaveChangesAsync;
+            return this.Context.SaveChangesAsync() > 0;
         }
     }
 }

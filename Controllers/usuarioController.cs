@@ -15,9 +15,6 @@ namespace crud_usuario.Controllers
             this.repository = repository;
         }
 
-
-
-
         [HttpGet]
         public IActionResult Get()
         {
@@ -25,11 +22,12 @@ namespace crud_usuario.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post(usuario usuario)
+        public async Task<IActionResult> Post(usuario usuario)
         {
-            var usuarios = Usuarios();
-            usuarios.Add(usuario);
-            return Ok(usuarios);
+            this.repository.AdicionaUsuario(usuario);
+            return await_repository.SaveChangesAsync()
+                    ? Ok("Usuario adicionado com sucesso")
+                    : BadRequest("Erro ao salvar o usuario");
         }
     }
 }
