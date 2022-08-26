@@ -16,9 +16,12 @@ namespace crud_usuario.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> Get()
         {
-            return Ok();
+            var usuarios = await this.repository.BuscaUsuarios();
+            return usuarios.Any()
+                ?  Ok(usuarios)
+                : NoContent() ;
         }
 
         [HttpPost]

@@ -1,5 +1,6 @@
 using crud_usuario.Data;
 using crud_usuario.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace crud_usuario.Repository
 {
@@ -14,12 +15,12 @@ namespace crud_usuario.Repository
 
         public async Task<usuario> BuscaUsuarios(int id)
         {
-            return await this.context.usuarios.toListAsync();
+            throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<usuario>> BuscaUsuarios()
+        public async Task<IEnumerable<usuario>> BuscaUsuarios()
         {
-            throw new NotImplementedException();
+            return await this.context.usuarios.ToListAsync();
         }
         public void AdicionaUsuario(usuario usuario)
         {
