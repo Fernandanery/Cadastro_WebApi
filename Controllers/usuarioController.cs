@@ -20,8 +20,17 @@ namespace crud_usuario.Controllers
         {
             var usuarios = await this.repository.BuscaUsuarios();
             return usuarios.Any()
-                ?  Ok(usuarios)
-                : NoContent() ;
+                ? Ok(usuarios)
+                : NoContent();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var usuarios = await this.repository.BuscaUsuarios(id);
+            return usuarios != null
+                ? Ok(usuarios)
+                : NotFound("Usuário não encontrado");
         }
 
         [HttpPost]
@@ -32,5 +41,37 @@ namespace crud_usuario.Controllers
                     ? Ok("Usuario adicionado com sucesso")
                     : BadRequest("Erro ao salvar o usuario");
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(int id, usuario usuario)
+        {
+            var usuarioBanco = await this.repository.BuscaUsuarios(id);
+            if (usuarioBanco == null) return NotFound("Usuário não encontrado");
+
+            usuarioBanco.Nome = usuario.Nome ?? usuarioBanco.Nome;
+            usuarioBanco.DataNascimento = usuario.DataNascimento != new DateTime()
+             ? usuario.DataNascimento : usuarioBanco.DataNascimento;
+
+            this.repository.AtualizaUsuario(usuarioBanco);
+
+            return await this.repository.SaveChangesAsync()
+      ? Ok("Usuario atualizado com sucesso")
+      : BadRequest("Erro ao atualizar o usuario");
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id, usuario usuario)
+    {
+        var usuarioBanco = await this.repository.BuscaUsuarios(id);
+        if (usuarioBanco == null) return NotFound("Usuário não encontrado");
+
+        this.repository.DeletaUsuario(usuarioBanco);
+
+        return await this.repository.SaveChangesAsync()
+                   ? Ok("Usuario deletado com sucesso")
+                   : BadRequest("Erro ao deletar o usuario");
+
     }
+
+}
 }

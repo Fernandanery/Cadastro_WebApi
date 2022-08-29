@@ -23,6 +23,10 @@ namespace crud_usuario.Data
             usuario.Property(x => x.DataNascimento).HasColumnName("data_nascimento");
 
         }
-        
+
+        internal object Where(Func<object, bool> value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
